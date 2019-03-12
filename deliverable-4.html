@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 2</title>
+</head>
+<body>
+<!--Given a string of any length with any characters in it, write a function to determine whether or not the string contains the whole word 'english'. The order of the characters/spelling is important, a string 'ajkshenglishdfklajf' would return true while asldjfegnlish would return false. Upper and lower case does not matter. Return values should be booleans(true/false)
+
+example:
+Input: FaagdnglishAGG
+Output: false
+
+example:
+Input: SMFENglishasnD
+Output: true
+
+-->
+
+
+<script>
+    'use strict';
+
+    function isEnglish(input) {
+        input = input.toLowerCase();
+        return input.includes('english');
+
+
+    }
+    console.log(isEnglish('asdfkjhSDFGAD'));
+    console.log(isEnglish('asdfenGLish;lkdjshfaliub'));
+
+</script>
+</body>
+</html>
